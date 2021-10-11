@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Bill</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/vi/thumb/7/7e/Logo_KFC.svg/1200px-Logo_KFC.svg.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="./img/logoKFC.png" alt="">
+    </header>
+
+    <div class="order">
+
+        <h1>Your Order From KFC</h1>
+        <ul class="order-items">
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                    <button class="delete-btn">X</button>
+                </span>
+            </li>
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                    <button class="delete-btn">X</button>
+                </span>
+            </li>
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                    <button class="delete-btn">X</button>
+                </span>
+            </li>
+        </ul>
+
+        <button id="add-btn">Add Food</button>
+
+        <div class="order-summary">
+            <p>Subtotal <span id="sub-total" class="money">15.98 $</span></p>
+            <p>Shipping <span id="shipping" class="money">2 $</span></p>
+            <p>Total <span id="total" class="money">18 $</span></p>
+        </div>
+
+        <button id="checkout-btn">Confirm your order & Check-out</button>
+
+    </div>
+
+    <div class="goodbye">
+        <h2>Cảm ơn vì đã lựa chọn KFC chúng tôi</h2>
+        <p>Chúc bạn và gia đình có 1 bữa ăn thật ngon miệng</p>
+
+        <button class="goodbye-btn">Thay đổi order</button>
+    </div>
+
+</body>
+
+<script src="./helper.js"></script>
+<script src="./script.js"></script>
+
+</html>

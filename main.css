@@ -1,0 +1,173 @@
+* {
+    box-sizing: inherit ;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 2.2rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #FCBB60 0%, #FFCC6F 100%);
+}
+
+
+/* Body */
+
+body {
+    width: 45rem;
+    min-height: 20rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    flex-basis: 12rem;
+    background: rgba(255, 73, 36, 0.83);
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+header .logo {
+    height: 100%;
+    width: 24%;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 5rem   ;
+}
+
+.order {
+    padding: 3.5rem;
+    background-color: white;
+    flex: 1;
+    border-radius: 0 0 1rem 1rem;
+    padding-top: 4rem;
+    /* display: none; */
+}
+
+.order h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.order button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#add-btn {
+    border: 1px solid gray;
+    width: 18rem;
+    background-color: white;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+#checkout-btn {
+    width: 100%;
+    color: white;
+    background-color: #ff6144;
+}
+
+
+.order-summary {
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #e6e6ea;
+    border-radius: 0.5rem;
+    line-height: 2.5rem;
+}
+
+.order-summary .money {
+    float: right;
+}
+
+.order-items {
+    max-height: 136px;
+    overflow: auto;
+}
+
+.order-item {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.item-name {
+    flex-basis: 20rem;
+}
+.item-quantity {
+    flex-basis: 10rem;
+}
+.item-price {
+    margin-left: auto;
+}
+
+.order-item button {
+    padding: 0.5rem;
+    width: 20px;
+    height: 20px;
+    line-height: 10px;
+    font-size: 2rem;
+}
+
+.order-item .delete-btn {
+    font-size: 1rem;
+}
+
+.item-quantity input {
+    width: 30px;
+    position: relative;
+    top: -2px;
+    border: none;
+    padding-left: 0.8rem;
+}
+
+
+.goodbye {
+    background-color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 50px 0 30px 0;
+    display: none;
+}
+
+.goodbye h2 {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.goodbye p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.goodbye button {
+    /* width: 100%; */
+    color: white;
+    background-color: #ff6144;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
